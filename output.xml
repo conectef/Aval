@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.8 on win32)" generated="20220507 22:09:02.993" rpa="false" schemaversion="2">
+<suite id="s1" name="Teste2" source="C:\WebJump\teste2.robot">
+<test id="s1-t1" name="Primeiro teste">
+<kw name="Abrir sessao" library="teste2_STEPS">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220507 22:09:03.363" level="INFO">Opening browser 'chrome' to base url 'https://wj-qa-automation-test.github.io/qa-test/'.</msg>
+<status status="PASS" starttime="20220507 22:09:03.363" endtime="20220507 22:09:07.830"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220507 22:09:07.831" endtime="20220507 22:09:07.975"/>
+</kw>
+<status status="PASS" starttime="20220507 22:09:03.362" endtime="20220507 22:09:07.975"/>
+</kw>
+<kw name="Clicar nos botoes" library="teste2_STEPS">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BtnOne}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220507 22:09:07.977" level="INFO">Clicking element 'xpath=//div[@class="panel-body text-center"]//button[@id="btn_one"]'.</msg>
+<status status="PASS" starttime="20220507 22:09:07.977" endtime="20220507 22:09:08.053"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220507 22:09:09.063" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220507 22:09:08.053" endtime="20220507 22:09:09.063"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BtnTwo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220507 22:09:09.064" level="INFO">Clicking element 'xpath=//div[@class="panel-body text-center"]//button[@id="btn_two"]'.</msg>
+<status status="PASS" starttime="20220507 22:09:09.064" endtime="20220507 22:09:09.133"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220507 22:09:10.144" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220507 22:09:09.134" endtime="20220507 22:09:10.144"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BtnFour}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220507 22:09:10.145" level="INFO">Clicking element 'xpath=//div[@class="panel-body text-center"]//button[@id="btn_link"]'.</msg>
+<status status="PASS" starttime="20220507 22:09:10.144" endtime="20220507 22:09:10.205"/>
+</kw>
+<status status="PASS" starttime="20220507 22:09:07.976" endtime="20220507 22:09:10.206"/>
+</kw>
+<kw name="Verificar botoes visiveis" library="teste2_STEPS">
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${BtnOne}</arg>
+<arg>3</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20220507 22:09:10.208" endtime="20220507 22:09:10.248"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${BtnTwo}</arg>
+<arg>3</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20220507 22:09:10.248" endtime="20220507 22:09:10.280"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${BtnFour}</arg>
+<arg>3</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20220507 22:09:10.280" endtime="20220507 22:09:10.774"/>
+</kw>
+<status status="PASS" starttime="20220507 22:09:10.207" endtime="20220507 22:09:10.775"/>
+</kw>
+<kw name="Preencha nome" library="teste2_STEPS">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${InputName}</arg>
+<arg>3</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220507 22:09:13.956" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-51.png"&gt;&lt;img src="selenium-screenshot-51.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220507 22:09:13.822" endtime="20220507 22:09:13.957"/>
+</kw>
+<msg timestamp="20220507 22:09:13.960" level="FAIL">Element 'xpath=//body[@class="text-center"]//input[@placeholder="YourFirstName"]' not visible after 3 seconds.</msg>
+<status status="FAIL" starttime="20220507 22:09:10.776" endtime="20220507 22:09:13.960"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220507 22:09:13.961" endtime="20220507 22:09:13.961"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${InputName}</arg>
+<arg>Juntos somos mais fortes</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220507 22:09:13.962" endtime="20220507 22:09:13.962"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BtnOne}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220507 22:09:13.962" endtime="20220507 22:09:13.962"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220507 22:09:13.962" endtime="20220507 22:09:13.962"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CheckButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220507 22:09:13.962" endtime="20220507 22:09:13.963"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220507 22:09:13.963" endtime="20220507 22:09:13.963"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ComboBox}</arg>
+<arg>ExampleTwo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220507 22:09:13.963" endtime="20220507 22:09:13.963"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Imagem}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220507 22:09:13.963" endtime="20220507 22:09:13.963"/>
+</kw>
+<status status="FAIL" starttime="20220507 22:09:10.775" endtime="20220507 22:09:13.964"/>
+</kw>
+<status status="FAIL" starttime="20220507 22:09:03.361" endtime="20220507 22:09:13.965">Element 'xpath=//body[@class="text-center"]//input[@placeholder="YourFirstName"]' not visible after 3 seconds.</status>
+</test>
+<status status="FAIL" starttime="20220507 22:09:02.995" endtime="20220507 22:09:13.968"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Teste2">Teste2</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220507 22:09:03.034" level="ERROR">Error in file 'C:\WebJump\teste2_STEPS.robot' on line 8: Setting 'Test Setup' is not allowed in resource file.</msg>
+</errors>
+</robot>
